@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --color-void: #060607;
+  --color-charcoal: #101012;
+  --color-ash: #1a1a1d;
+  --color-smoke: #2a2a2e;
+  --color-bone: #e8e4dc;
+  --color-dim: #8a8783;
+  --color-lamp: #ffb86b;
+  --color-screen: #9fd8ff;
+  --color-leaf: #7dd8a8;
+  --font-display: var(--font-museum), "Bodoni Moda", Didot, "Times New Roman",
+    Georgia, serif;
+}
+
+:root {
+  --background: #060607;
+  --foreground: #e8e4dc;
+}
+
+html,
+body {
+  height: 100%;
+  background: var(--background);
+  color: var(--foreground);
+  overscroll-behavior: none;
+}
+
+body {
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+canvas {
+  touch-action: none;
+}
+
+/* The room's arrival: a small settle from slightly forward and slightly
+   soft, timed to run underneath the title card's dissolve. Scale and opacity
+   are compositor-only, so this costs nothing while the camera is already
+   gliding. */
+@keyframes room-settle {
+  from {
+    transform: scale(1.05);
+    opacity: 0.55;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.room-settle {
+  animation: room-settle 1.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,6 @@
+[
+  { "no": "P1", "title": "Dust Study", "medium": "Light on primer", "year": "2026", "note": "Counted nightly. The total never repeats.", "seed": 11, "palette": ["#2a2f3a", "#8a7a5f", "#d8cfc0"], "image": "/collection/dust-study.png" },
+  { "no": "P2", "title": "Courtyard, Rain", "medium": "Light on primer", "year": "2026", "note": "Observed from the window during one storm.", "seed": 27, "palette": ["#101820", "#3f5a6b", "#9fd8ff"], "image": "/collection/courtyard-rain.png" },
+  { "no": "P3", "title": "Lamp Left On", "medium": "Light on primer", "year": "2025", "note": "Nobody admits to leaving it. Everybody visits it.", "seed": 42, "palette": ["#1a120a", "#8a5f2f", "#ffce8a"], "image": "/collection/lamp-left-on.png" },
+  { "no": "P4", "title": "The Green Stone (sketch)", "medium": "Light on primer", "year": "2026", "note": "Drawn before the stone agreed to sit still.", "seed": 63, "palette": ["#0d1410", "#3f6b4f", "#a8e6c3"], "image": "/collection/green-stone.png" }
+]
